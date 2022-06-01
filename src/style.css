@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Fresca&family=Patrick+Hand&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-family: 'Patrick Hand', cursive;
+  background-color: #f0f0f0;
+  color: #5e5e5e;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+i {
+  font-size: 14px;
+  color: #9c9c9c;
+}
+
+.border {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+input[type="text"] {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 90%;
+  font-family: inherit;
+  font-size: inherit;
+  margin-left: 10px;
+}
+
+/* !Section styling */
+#todo-section {
+  width: 95%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 3px 15px 0 rgba(168, 168, 168, 0.4);
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+/* !form and list section styling */
+
+.list-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 10px 15px;
+}
+
+.to-do-list li div {
+  width: 90%;
+}
+
+#add-item {
+  font-style: italic;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn button {
+  width: 100%;
+  background: #f0f0f0;
+  height: 100%;
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+}
