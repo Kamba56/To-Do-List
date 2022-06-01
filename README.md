@@ -1,2 +1,2 @@
-# To-Do-List
-This is an app built with HTML, CSS and JavaScript to store a list of to-do. You can add, and delete from list.
+# Webpack-Setup
+This is a basic setup of webpack for a project using html, css and javascript
