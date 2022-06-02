@@ -35,6 +35,14 @@ i {
   border-bottom: 1px solid #e0e0e0;
 }
 
+.yellow {
+  background: #fff78180;
+}
+
+.btn2 {
+  color: #000;
+}
+
 input[type="text"] {
   background-color: transparent;
   border: none;
