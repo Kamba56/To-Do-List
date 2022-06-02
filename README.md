@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://kamba56.github.io/To-Do-List/)
+[Live Demo Link](https://kamba56.github.io/To-Do-List/dist)
 
 ## Getting Started
 
