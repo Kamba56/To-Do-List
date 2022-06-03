@@ -1,6 +1,7 @@
 import { list, toDoList } from './elements.js';
 import editTask from './edit.js';
 import removeTodo from './remove.js';
+import complete from './check.js';
 
 const populate = (todo) => {
   const listItem = document.createElement('li');
@@ -45,6 +46,10 @@ const populate = (todo) => {
 
   btn2.addEventListener('click', () => {
     removeTodo(btn2, listelement);
+  });
+
+  checkbox.addEventListener('change', (e) => {
+    complete(e, listelement, text);
   });
 };
 
