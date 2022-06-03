@@ -20,9 +20,9 @@ for (let i = 1; i <= list.length; i += 1) {
 }
 
 clear.addEventListener('click', () => {
-  const newlist = list.filter((element) => element.completed === false);
-  list.forEach((element) => {
-    if (!newlist.includes(element)) {
+  const newlist = list.filter((element) => element.completed === true);
+  newlist.forEach((element) => {
+    if (list.includes(element)) {
       list.splice(list.indexOf(element), 1);
     }
   });

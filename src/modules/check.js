@@ -8,4 +8,11 @@ const complete = (e, todo, text) => {
   }
 };
 
-export default complete;
+const checkCheck = (checkbox, todo, text) => {
+  if (todo.completed) {
+    checkbox.checked = true;
+    text.style.textDecoration = 'line-through';
+  }
+};
+
+export { complete, checkCheck };

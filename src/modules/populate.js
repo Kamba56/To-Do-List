@@ -1,7 +1,7 @@
 import { list, toDoList } from './elements.js';
 import editTask from './edit.js';
 import removeTodo from './remove.js';
-import complete from './check.js';
+import { complete, checkCheck } from './check.js';
 
 const populate = (todo) => {
   const listItem = document.createElement('li');
@@ -48,10 +48,7 @@ const populate = (todo) => {
     removeTodo(btn2, listelement);
   });
 
-  if (todo.completed) {
-    checkbox.checked = true;
-    text.style.textDecoration = 'line-through';
-  }
+  checkCheck(checkbox, todo, text);
 
   checkbox.addEventListener('change', (e) => {
     complete(e, listelement, text);
