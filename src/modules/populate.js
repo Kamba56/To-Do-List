@@ -48,8 +48,14 @@ const populate = (todo) => {
     removeTodo(btn2, listelement);
   });
 
+  if (todo.completed) {
+    checkbox.checked = true;
+    text.style.textDecoration = 'line-through';
+  }
+
   checkbox.addEventListener('change', (e) => {
     complete(e, listelement, text);
+    localStorage.setItem('list', JSON.stringify(list));
   });
 };
 
