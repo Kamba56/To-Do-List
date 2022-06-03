@@ -1,7 +1,7 @@
 import './style.css';
 import populate from './modules/populate.js';
-import { form } from './modules/elements.js';
-import { list, addNew } from './modules/add.js'
+import { list, form } from './modules/elements.js';
+import addNew from './modules/add.js';
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();

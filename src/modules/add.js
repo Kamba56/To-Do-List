@@ -1,8 +1,6 @@
-import ToDo from "./toDo.js";
-import { form } from "./elements.js";
-import populate from "./populate.js";
-
-const list = [];
+import ToDo from './toDo.js';
+import { list, form } from './elements.js';
+import populate from './populate.js';
 
 const addNew = () => {
   const todo = new ToDo();
@@ -10,6 +8,7 @@ const addNew = () => {
   list.push(todo);
   todo.index = list.length;
   populate(todo);
-}
+  localStorage.setItem('list', JSON.stringify(list));
+};
 
-export { list, addNew};
+export default addNew;

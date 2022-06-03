@@ -1,6 +1,5 @@
-import { toDoList } from './elements.js';
+import { list, toDoList } from './elements.js';
 import editTask from './edit.js';
-import { list } from './add.js';
 import removeTodo from './remove.js';
 import complete from './check.js';
 
@@ -32,17 +31,17 @@ const populate = (todo) => {
   listItem.append(div, btn, btn2);
 
   let listelement = {};
-  list.forEach(element => {
+  list.forEach((element) => {
     if (element === todo) {
       listelement = element;
-    }      
+    }
   });
-  
+
   btn.addEventListener('click', () => {
     editTask(text, listItem, listelement, btn, btn2);
     listItem.classList.add('yellow');
     btn2.style.display = 'block';
-    btn.style.display = 'none';      
+    btn.style.display = 'none';
   });
 
   btn2.addEventListener('click', () => {

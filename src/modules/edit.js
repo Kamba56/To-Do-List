@@ -1,4 +1,4 @@
-import { list } from "./add.js";
+import { list } from './elements.js';
 
 const editTask = (text, listItem, todo, btn, btn2) => {
   text.disabled = false;
@@ -8,11 +8,11 @@ const editTask = (text, listItem, todo, btn, btn2) => {
       text.disabled = true;
       listItem.classList.remove('yellow');
       todo.description = text.value;
+      localStorage.setItem('list', JSON.stringify(list));
       btn.style.display = 'block';
       btn2.style.display = 'none';
-      console.log(list);
     }
   });
-}
+};
 
 export default editTask;
