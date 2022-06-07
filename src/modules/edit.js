@@ -12,7 +12,7 @@ const editTask = (text, listItem, todo, btn, btn2) => {
       btn.style.display = 'block';
       btn2.style.display = 'none';
     }
-  });  
+  });
 };
 
 export default editTask;

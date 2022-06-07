@@ -45,7 +45,7 @@ const populate = (todo) => {
   });
 
   document.addEventListener('click', (e) => {
-    let desc = Array.from(listItem.querySelectorAll('*'));
+    const desc = Array.from(listItem.querySelectorAll('*'));
     if (!desc.includes(e.target) && !text.disabled) {
       text.disabled = true;
       listItem.classList.remove('yellow');
