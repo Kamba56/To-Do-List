@@ -44,6 +44,18 @@ const populate = (todo) => {
     btn.style.display = 'none';
   });
 
+  document.addEventListener('click', (e) => {
+    const desc = Array.from(listItem.querySelectorAll('*'));
+    if (!desc.includes(e.target) && !text.disabled) {
+      text.disabled = true;
+      listItem.classList.remove('yellow');
+      listelement.description = text.value;
+      localStorage.setItem('list', JSON.stringify(list));
+      btn.style.display = 'block';
+      btn2.style.display = 'none';
+    }
+  });
+
   btn2.addEventListener('click', () => {
     removeTodo(btn2, listelement);
   });
