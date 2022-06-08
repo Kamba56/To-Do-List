@@ -64,10 +64,13 @@ input[type="text"] {
   box-shadow: 0 3px 15px 0 rgba(168, 168, 168, 0.4);
 }
 
-.head {
+.flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.head {
   padding: 15px 20px;
 }
 
@@ -80,9 +83,6 @@ input[type="text"] {
 /* !form and list section styling */
 
 .list-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 10px 10px 10px 15px;
 }
 
