@@ -5,7 +5,7 @@ import { complete, checkCheck } from './check.js';
 
 const populate = (todo) => {
   const listItem = document.createElement('li');
-  listItem.classList.add('border', 'list-flex', 'flex');
+  listItem.classList.add('border', 'list-flex');
   toDoList.appendChild(listItem);
 
   const checkbox = document.createElement('input');

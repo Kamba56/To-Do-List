@@ -11,17 +11,13 @@ form.addEventListener('submit', (e) => {
   form.reset();
 });
 
-const displayLi = (list) => {
-  for (let i = 1; i <= list.length; i += 1) {
-    list.forEach((listItem) => {
-      if (listItem.index === i) {
-        populate(listItem);
-      }
-    });
-  }  
-};
-
-displayLi(list);
+for (let i = 1; i <= list.length; i += 1) {
+  list.forEach((listItem) => {
+    if (listItem.index === i) {
+      populate(listItem);
+    }
+  });
+}
 
 clear.addEventListener('click', () => {
   const newlist = list.filter((element) => element.completed === true);
@@ -36,6 +32,12 @@ clear.addEventListener('click', () => {
     i += 1;
   });
   toDoList.innerHTML = '';
-  displayLi(list);
+  for (let i = 1; i <= list.length; i += 1) {
+    list.forEach((listItem) => {
+      if (listItem.index === i) {
+        populate(listItem);
+      }
+    });
+  }
   localStorage.setItem('list', JSON.stringify(list));
 });
